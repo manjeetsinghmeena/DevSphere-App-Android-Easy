@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F0F2F5"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1C1E21"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income (₹)"
+        android:textColor="#606770"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etIncome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:paddingHorizontal="16dp"
+        android:inputType="numberDecimal"
+        android:textColor="#1C1E21"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Rate (%)"
+        android:textColor="#606770"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etTaxRate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:paddingHorizontal="16dp"
+        android:inputType="numberDecimal"
+        android:textColor="#1C1E21"
+        android:textSize="16sp"
+        android:layout_marginBottom="36dp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Calculate Tax"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0A7CFF"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculation Result"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1C1E21"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTaxAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tax Amount: ₹ 0.00"
+            android:textSize="16sp"
+            android:textColor="#D93025"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvFinalIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Income: ₹ 0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E8E3E"/>
+    </LinearLayout>
+
+</LinearLayout>
