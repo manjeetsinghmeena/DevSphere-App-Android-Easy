@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="24dp"
     android:background="#F0F2F5"
+    android:id="@+id/main"
     android:gravity="top">
 
     <TextView
